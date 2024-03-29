@@ -27,8 +27,8 @@ export class VendorController {
     return this.vendorService.update(+id, updateVendorDto);
   }
 
-  // @Delete(':id')
-  // remove(@Param('id') id: string) {
-  //   return this.vendorService.remove(+id);
-  // }
+  @Delete(':id')
+  remove(@Param('id') id: string) {
+    return this.vendorService.remove(+id);
+  }
 }
